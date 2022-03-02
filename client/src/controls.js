@@ -1,9 +1,12 @@
 import React from "react";
 // import { useRecoilState } from "recoil";
+// import { CameraMoveInfo } from "./atoms";
 // import { coinArrayAtom } from "./atoms";
 
 const Controls = (player, id, socket, coinsArray) => {
   const [myMoveInfo, setMyMoveInfo] = React.useState({});
+  // const [cameraMoveInfo, setCameraMoveInfo] = useRecoilState(CameraMoveInfo);
+  // console.log("cameraMoveInfo", cameraMoveInfo);
   // const [coinsArrayAtom, setCoinsArrayAtom] = useRecoilState(coinArrayAtom);
 
   document.onkeydown = (e) => {
